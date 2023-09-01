@@ -74,3 +74,25 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+
+const calcDisplaySummary = function(movements){
+const income = movements.filter(deposit => deposit > 0)
+.reduce((acc, deposit) => acc + deposit, 0)
+
+labelSumIn.textContent = `${income}Eur`
+}
+
+calcDisplaySummary(account1.movements)
+
+
+//find()
+
+const firstWithdrawal = movements.find(mov => mov < 0);
+console.log(movements)
+console.log(firstWithdrawal)
+
+const account = accounts.find(acc => acc.owner === 'Jessica Davis')
+console.log(account)
+//return the object of Jessica davies
+
