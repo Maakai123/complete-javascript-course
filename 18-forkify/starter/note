@@ -1,0 +1,12 @@
+initialize new project with npm init
+install parcel npm i parcel@2 -D
+npm start 
+
+note bundlers like parcel and webpack will push all the necessary things into distribution file and push to the browser
+
+//when looping through the arrays in ingredients, dont use forEach, use map becuase it returns a new array with equal lenghth.
+
+note: After looping through the entire array, it will return a big string which can be joined 
+
+install polifill: so old browsers can run our app 
+npm install core-js regenerator-runtime
